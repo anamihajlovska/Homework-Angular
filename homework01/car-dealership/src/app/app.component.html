@@ -1,0 +1,10 @@
+<app-header></app-header>
+<app-dealership-info
+  [description]="'We offer a wide range of cars at competitive prices.'"
+  [founded]="1995"
+></app-dealership-info>
+<div class="car-container">
+  <app-car-card *ngFor="let car of cars" [car]="car"></app-car-card>
+</div>
+
+<app-create-car (carCreated)="addNewCar($event)"></app-create-car>

@@ -1,0 +1,9 @@
+<div class="car-card" *ngIf="car">
+  <img [src]="car.images" alt="{{ car.model }}" class="car-image" />
+  <div class="car-details">
+    <h2>{{ car.brand }} {{ car.model }}</h2>
+    <h5>{{ car.description }}</h5>
+
+    <p><strong>Price:</strong> ${{ car.price }}</p>
+  </div>
+</div>

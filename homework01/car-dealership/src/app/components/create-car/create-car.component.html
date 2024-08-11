@@ -1,0 +1,59 @@
+<form class="car-form" #carForm="ngForm">
+  <div class="form-group">
+    <label for="brand">Brand:</label>
+    <input
+      type="text"
+      id="brand"
+      name="brand"
+      [(ngModel)]="newCar.brand"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="model">Model:</label>
+    <input
+      type="text"
+      id="model"
+      name="model"
+      [(ngModel)]="newCar.model"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="price">Price:</label>
+    <input
+      type="number"
+      id="price"
+      name="price"
+      [(ngModel)]="newCar.price"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="imageUrl">Image URL:</label>
+    <input
+      type="text"
+      id="imageUrl"
+      name="imageUrl"
+      (ngModel)="(newCar.images)"
+      placeholder="Enter image URL"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea
+      id="description"
+      name="description"
+      [(ngModel)]="newCar.description"
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="submit-button" (click)="createCar()">
+    Add Car
+  </button>
+</form>

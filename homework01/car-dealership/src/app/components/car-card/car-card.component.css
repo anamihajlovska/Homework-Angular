@@ -1,0 +1,26 @@
+/* Ensure CSS is correct */
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 300px;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details h2 {
+  margin-top: 0;
+}
+
+.car-details p {
+  margin: 5px 0;
+}
