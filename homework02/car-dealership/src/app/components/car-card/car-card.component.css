@@ -1,0 +1,46 @@
+.car-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.car-card h3 {
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+.car-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.car-card button {
+  background-color: #393e35;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.car-card button:hover {
+  background-color: #4a5662;
+}

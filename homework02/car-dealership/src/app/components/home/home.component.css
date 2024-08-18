@@ -1,0 +1,136 @@
+.hero-section {
+  background: url("https://img.freepik.com/free-photo/sports-car-races-through-dark-blurred-motion-generative-ai_188544-12490.jpg")
+    no-repeat center center/cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #8a6e65;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.hero-content button:hover {
+  background-color: #e64a19;
+}
+
+/* Featured Car */
+.featured-car {
+  padding: 2rem;
+  text-align: center;
+}
+
+.featured-car h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.car-card {
+  display: inline-block;
+  width: 80%;
+  max-width: 500px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.car-card button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #8a6e65;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.car-card button:hover {
+  background-color: #e64a19;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* About Us */
+.about-us {
+  padding: 3rem;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.about-us .highlight {
+  background: #8a6e65;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
