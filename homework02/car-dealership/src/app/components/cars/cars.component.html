@@ -1,5 +1,42 @@
+<div class="search-container">
+  <input
+    type="text"
+    [(ngModel)]="searchBrand"
+    (keyup)="handleInputChange($event)"
+    class="search-input"
+    placeholder="Search by brand"
+  />
+  <input
+    type="number"
+    name="fromPrice"
+    [(ngModel)]="fromPrice"
+    (input)="handlePriceChange($event)"
+    class="price-input"
+    placeholder="From Price"
+  />
+  <input
+    type="number"
+    name="toPrice"
+    (input)="handlePriceChange($event)"
+    [(ngModel)]="toPrice"
+    class="price-input"
+    placeholder="To Price"
+  />
+</div>
+
 <div class="car-container">
-  @for (car of cars(); track $index) {
+  <!-- @for (car of cars(); track car.id | filterByBrand: searchBrand) {
   <app-car-card [car]="car" />
-  }
+  } -->
+
+  <div
+    *ngFor="
+      let car of cars()
+        | filterByBrand : searchBrand()
+        | fromPrice : fromPrice()
+        | toPrice : toPrice()
+    "
+  >
+    <app-car-card [car]="car"></app-car-card>
+  </div>
 </div>
