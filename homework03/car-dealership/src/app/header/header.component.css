@@ -1,0 +1,29 @@
+/* Header Component Styles */
+header {
+  background-color: #d0cdcd;
+  color: #000000;
+
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,108 @@
+.car-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.car-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+}
+
+.car-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.car-card h3 {
+  margin: 15px 0;
+  font-size: 24px;
+}
+
+.car-card p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.car-card button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.car-card button:hover {
+  background-color: #0056b3;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.search-input,
+.price-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.price-input {
+  max-width: 150px;
+}
+
+.search-input:focus,
+.price-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.3);
+}
+
+.search-input::placeholder,
+.price-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.search-input,
+.price-input {
+  font-family: "Arial", sans-serif;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.price-input {
+  padding: 10px;
+}
+
+.search-input:hover,
+.price-input:hover {
+  border-color: #007bff;
+  background-color: #f1faff;
+}

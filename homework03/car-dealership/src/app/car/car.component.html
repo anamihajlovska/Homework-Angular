@@ -1,0 +1,13 @@
+<mat-grid-list
+  [cols]="breakpoint"
+  rowHeight="2:3"
+  gutterSize="5px"
+  class="grid-container"
+  (window:resize)="onResize($event)"
+>
+  @if (!cars().length){
+  <p>No Cars</p>
+  } @for(car of cars(); track car.id){
+  <mat-grid-tile><app-car-card [car]="car"></app-car-card></mat-grid-tile>
+  }
+</mat-grid-list>
